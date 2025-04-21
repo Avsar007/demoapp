@@ -148,7 +148,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2025-04-14 10:36:04.788734",
+ "modified": "2025-04-20 16:42:03.558957",
  "modified_by": "Administrator",
  "module": "hypothetical flight ticket system",
  "name": "Airplane Flight",
@@ -167,6 +167,28 @@
    "share": 1,
    "submit": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Fleet Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Airport Authority Personnel",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Flight Crew Member"
+  },
+  {
+   "read": 1,
+   "role": "Travel Agent"
   }
  ],
  "route": "airplane_flights",

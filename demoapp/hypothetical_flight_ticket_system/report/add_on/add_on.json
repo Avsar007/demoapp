@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2025-04-20 14:11:53.018387",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "First Letter head",
+ "letterhead": null,
+ "modified": "2025-04-20 14:33:22.605717",
+ "modified_by": "Administrator",
+ "module": "hypothetical flight ticket system",
+ "name": "Add-On",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n    ai.item AS \"Add-On Type\",\r\n    COUNT(*) AS \"Sold Count\"\r\nFROM\r\n    `tabAirplane Ticket Add-on Item` ai\r\nWHERE\r\n    ai.parenttype = 'Airplane Ticket'\r\nGROUP BY\r\n    ai.item\r\nORDER BY\r\n    COUNT(*) DESC;\r\n",
+ "ref_doctype": "Airplane Ticket",
+ "report_name": "Add-On",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

@@ -16,7 +16,13 @@ class AirplaneTicket(Document):
 		total_add_ons = total_add_ons + self.flight_price
 		self.total_amount = total_add_ons
 		self.remove_duplicate_add_ons()
-
+		flight = frappe.get_doc("Airplane Flight", self.flight)
+		airplane = frappe.get_doc("Airplane", flight.airplane)
+			
+		total_tickets = frappe.db.count("Airplane Ticket", {"flight": self.flight})
+		if total_tickets >= airplane.capacity:
+			frappe.throw("Cannot create ticket: Airplane capacity exceeded.")
+	
 	def remove_duplicate_add_ons(self):
 		seen_items = set()
 		for row in self.get("add_ons"):

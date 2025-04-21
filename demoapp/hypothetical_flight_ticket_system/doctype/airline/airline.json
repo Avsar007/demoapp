@@ -1,15 +1,19 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "prompt",
  "creation": "2025-04-10 08:50:51.937047",
  "doctype": "DocType",
+ "documentation": "website",
  "engine": "InnoDB",
  "field_order": [
   "connections_section",
+  "headquarters",
   "founding_year",
+  "column_break_kogx",
   "customer_care_number",
-  "headquarters"
+  "website"
  ],
  "fields": [
   {
@@ -35,8 +39,19 @@
    "fieldname": "connections_section",
    "fieldtype": "Section Break",
    "label": "Connections"
+  },
+  {
+   "fieldname": "column_break_kogx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
   }
  ],
+ "icon": "website",
  "index_web_pages_for_search": 1,
  "links": [
   {
@@ -44,7 +59,7 @@
    "link_fieldname": "airline"
   }
  ],
- "modified": "2025-04-10 22:36:09.438898",
+ "modified": "2025-04-20 16:42:47.305120",
  "modified_by": "Administrator",
  "module": "hypothetical flight ticket system",
  "name": "Airline",
@@ -62,6 +77,25 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Airport Authority Personnel",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Fleet Manager"
+  },
+  {
+   "read": 1,
+   "role": "Flight Crew Member"
+  },
+  {
+   "read": 1,
+   "role": "Travel Agent"
   }
  ],
  "sort_field": "modified",

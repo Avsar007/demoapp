@@ -33,7 +33,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-10 09:02:21.408223",
+ "modified": "2025-04-20 16:45:20.748928",
  "modified_by": "Administrator",
  "module": "hypothetical flight ticket system",
  "name": "Airport",
@@ -51,6 +51,25 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Fleet Manager"
+  },
+  {
+   "read": 1,
+   "role": "Travel Agent"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Airport Authority Personnel",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Flight Crew Member"
   }
  ],
  "sort_field": "modified",
