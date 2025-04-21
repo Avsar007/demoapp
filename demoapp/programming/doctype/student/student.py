@@ -10,7 +10,7 @@ class Student(Document):
         self.calculate_percentage()
         self.grade_calculation()
         self.update_student_status()
-        # self.check()
+        self.check()
         # self.ensure_dob_less_erroll()
         # self.error_handling()
         # self.add_comment("Shared",f"{frappe.session.user}This is the change")
