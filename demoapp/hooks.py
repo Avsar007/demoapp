@@ -39,7 +39,88 @@ app_license = "mit"
 # webform_include_js = {"doctype": "public/js/doctype.js"}
 # webform_include_css = {"doctype": "public/css/doctype.css"}
 
-# include js in page
+# website_context hook
+
+website_context = {
+    "favicon": "/assets/demoapp/images/sigzen-favicon.svg",
+    "brand_html": "<b>My Custom Portal</b>"
+}
+
+update_website_context = "demoapp.overrides.website_context"
+
+# website Controller Context
+
+# extend_website_page_controller_context = {
+#     "frappe.www.404": "demoapp.pages.context_404"
+# }
+
+# web pages with dynamic routes
+
+# get_web_pages_with_dynamic_routes = "demoapp.script.get_web_pages_with_dynamic_routes"
+
+# website clear cache
+
+website_clear_cache = "demoapp.overrides.clear_website_cache"
+
+# website redirect 
+
+website_redirects = [
+    {"source": "/old-blog", "target": "/new-blog"},
+    {"source": "/products(/.*)?", "target": "/store\1"},
+    {"source": r'/search\?q=(.*)', "target": '/new-search?q=\1', "match_with_query_string": True}
+]
+
+# website route rules
+
+website_route_rules = [
+    {"from_route": "/projects/", "to_route": "demoapp/projects/project"}
+]
+
+# website path resolver
+
+# website_path_resolver = "demoapp.custom_router.custom_resolver"
+
+# website 404
+
+# website_catch_all = "not_found"
+
+# Default Homepage
+homepage = "homepage"
+
+
+# Calender
+calendars = ["Library Membership"]
+
+
+# portal Sidebar
+
+standard_portal_menu_items = [
+    {"title": "Greetings", "route": "/greetings", "role": "Website Manager"},
+    {"title": "Orders", "route": "/orders", "role": "Website Manager"},
+]
+
+# brand html
+
+brand_html = '<div><img src="/assets/demoapp/images/sigzen_favicon.svg" width="30"/> DemoApp</div>'
+# base_template = "demoapp/templates/custom_base.html"
+
+# Integration
+# Braintree Success Page
+
+braintree_success_page = "app.integrations.braintree_success_page"
+
+# clear-cache
+
+# clear_cache = "demoapp.cache.clear_cache"
+
+# Document Hooks
+# Modify List Query 
+
+permission_query_conditions = {
+    "ToDo": "demoapp.permissions.todo_query",
+}
+
+# include js in page    
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
@@ -47,6 +128,8 @@ app_license = "mit"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+
+# doctype_list_js = {"Student": "public/js/student_list.js"}
 
 # Svg Icons
 # ------------------
@@ -74,22 +157,49 @@ app_license = "mit"
 # ----------
 
 # add methods and filters to jinja environment
-# jinja = {
-# 	"methods": "demoapp.utils.jinja_methods",
-# 	"filters": "demoapp.utils.jinja_filters"
-# }
+jinja = {
+    "methods": [
+        "demoapp.jinja.methods",
+        "demoapp.utils.get_fullname"
+    ],
+    "filters": [
+        "demoapp.jinja.filters",
+        "demoapp.utils.format_currency"
+    ]
+}
 
 # Installation
 # ------------
 
 # before_install = "demoapp.install.before_install"
-# after_install = "demoapp.install.after_install"
+after_install = "demoapp.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "demoapp.uninstall.before_uninstall"
-# after_uninstall = "demoapp.uninstall.after_uninstall"
+# before_uninstall = "demoapp.install.before_uninstall"
+# after_uninstall = "demoapp.install.after_uninstall"
+
+# Migration
+# -----------
+
+before_migrate = "demoapp.migrate.before_migrate"
+after_migrate = "demoapp.migrate.after_migrate"
+
+# File Hooks
+
+# before_write_file = "demoapp.file.before_write"
+# write_file = "demoapp.file.write_file"
+# delete_file_data_content = "demoapp.file.delete_file"
+
+# Email Hooks
+
+# override_email_send = "demoapp.overrides.email.send"
+# get_sender_details = "demoapp.overrides.email.get_sender_details"
+
+# Extend BootInfo Hooks
+
+# extend_bootinfo = "your_app.boot.boot_session"
 
 # Integration Setup
 # ------------------
@@ -130,7 +240,7 @@ app_license = "mit"
 # Override standard doctype classes
 
 # override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
+# 	# "ToDo": "custom_app.overrides.CustomToDo",
 # }
 
 # Document Events
@@ -188,6 +298,7 @@ app_license = "mit"
 # exempt linked doctypes from being automatically cancelled
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
+auto_cancel_exempted_doctypes = ["Property"]
 
 # Ignore links to specified DocTypes when deleting documents
 # -----------------------------------------------------------
@@ -242,3 +353,19 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+# scheduler_events = {
+#     "cron": {         
+#         # "* * * * *": [
+#         #     "demoapp.api.long_task"
+#         # ],
+#         "9 * * * *": [
+#             # "demoapp.api.notify_me"
+#             "demoapp.api.long_task"
+#         ]
+#     }
+# }
+
+# fixtures = [
+#     "Custom Field"
+# ]

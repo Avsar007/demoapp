@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-14 00:10:43.628546",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tc2q",
+  "image_name",
+  "image_url",
+  "cover_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tc2q",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "image_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Image Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "image_url",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Image URL",
+   "make_attachment_public": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Image",
+   "label": "cover image",
+   "options": "image_url"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-17 12:11:35.306625",
+ "modified_by": "Administrator",
+ "module": "Programming",
+ "name": "Images",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

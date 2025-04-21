@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Prompt",
+ "creation": "2025-02-14 00:06:26.415060",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qwbf",
+  "product_id",
+  "product_name",
+  "category",
+  "price",
+  "stock_availability",
+  "tags",
+  "image",
+  "cover_image",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qwbf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Int",
+   "label": "Product Id"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "stock_availability",
+   "fieldtype": "Check",
+   "label": "Stock Availability"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Table",
+   "label": "Image",
+   "options": "Images",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Image",
+   "label": "Cover Image",
+   "options": "image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-17 12:53:30.391343",
+ "modified_by": "Administrator",
+ "module": "Programming",
+ "name": "Product Catalogue",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,20 @@
+{
+ "content": null,
+ "creation": "2025-02-21 10:08:32.940838",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "",
+ "idx": 0,
+ "modified": "2025-02-21 10:08:32.940838",
+ "modified_by": "Administrator",
+ "module": "Programming",
+ "name": "student-page",
+ "owner": "Administrator",
+ "page_name": "student-page",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Student Page"
+}

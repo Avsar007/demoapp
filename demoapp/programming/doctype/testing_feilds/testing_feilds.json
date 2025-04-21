@@ -1,0 +1,208 @@
+{
+ "actions": [
+  {
+   "action": "demoapp.api.notify_me",
+   "action_type": "Server Action",
+   "label": "Notify Me"
+  },
+  {
+   "action": "demoapp.api.long_task",
+   "action_type": "Server Action",
+   "label": "Long Task"
+  }
+ ],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2025-02-17 10:02:04.064984",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_1_tab",
+  "text_editor",
+  "time",
+  "datetime",
+  "publish",
+  "script",
+  "text",
+  "column_break_xzjy",
+  "map",
+  "warning",
+  "small_text",
+  "long_text",
+  "tab_break_qgps",
+  "mark_down",
+  "choose_color",
+  "barcode",
+  "password",
+  "rating",
+  "read_only",
+  "column_break_mftm",
+  "signature",
+  "duration",
+  "json",
+  "phone_no",
+  "naming_series",
+  "tab_multi"
+ ],
+ "fields": [
+  {
+   "fieldname": "text_editor",
+   "fieldtype": "Text Editor",
+   "label": "Text Editor"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "DateTime"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "publish",
+   "fieldtype": "Button",
+   "label": "Publish"
+  },
+  {
+   "fieldname": "script",
+   "fieldtype": "Code",
+   "label": "Python Script",
+   "options": "Python"
+  },
+  {
+   "fieldname": "choose_color",
+   "fieldtype": "Color",
+   "label": "Choose color"
+  },
+  {
+   "fieldname": "column_break_xzjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Map"
+  },
+  {
+   "fieldname": "warning",
+   "fieldtype": "HTML",
+   "label": "Warning",
+   "options": "<p class=\"alert alert-warning\">Your Name is invalid</p>"
+  },
+  {
+   "fieldname": "small_text",
+   "fieldtype": "Small Text",
+   "label": "Small text"
+  },
+  {
+   "fieldname": "long_text",
+   "fieldtype": "Long Text",
+   "label": "Long Text"
+  },
+  {
+   "fieldname": "mark_down",
+   "fieldtype": "Markdown Editor",
+   "label": "Mark Down"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "read_only",
+   "fieldtype": "Read Only",
+   "label": "Read Only"
+  },
+  {
+   "fieldname": "tab_break_qgps",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "tab_1_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 1"
+  },
+  {
+   "fieldname": "column_break_mftm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "duration"
+  },
+  {
+   "fieldname": "json",
+   "fieldtype": "JSON",
+   "label": "Json"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Phone",
+   "label": "Phone no."
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "tab_multi",
+   "fieldtype": "Table MultiSelect",
+   "label": "Tab multi",
+   "options": "Family Members"
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Text",
+   "label": "Text"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-10 08:45:49.863823",
+ "modified_by": "Administrator",
+ "module": "Programming",
+ "name": "Testing Feilds",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

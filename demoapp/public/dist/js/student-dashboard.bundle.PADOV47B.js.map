@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["frappe-html:/home/erpadmin/frappe-bench/apps/demoapp/demoapp/programming/dashboard/student_dashboard.html"],
+  "sourcesContent": ["\n\tfrappe.templates['student_dashboard'] = `<div class=\"Student\">\n\t<div class=\"result\">\n\t</div>\n\t<div class=\"more hidden\" style=\"padding: 15px;\">\n\t\t<a class=\"btn btn-default btn-xs btn-more\">More</a>\n\t</div>\n</div>\n`;\n"],
+  "mappings": ";;AACC,SAAO,UAAU,uBAAuB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;",
+  "names": []
+}

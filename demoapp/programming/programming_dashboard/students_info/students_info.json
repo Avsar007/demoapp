@@ -1,0 +1,33 @@
+{
+ "cards": [
+  {
+   "card": "Total Students"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Student Chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Percentage Chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Percent With Respect to 80",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-02-20 18:14:35.118025",
+ "dashboard_name": "Students Info",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-02-20 18:30:42.335368",
+ "modified_by": "Administrator",
+ "module": "Programming",
+ "name": "Students Info",
+ "owner": "Administrator"
+}

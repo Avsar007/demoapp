@@ -1,0 +1,16 @@
+<h1>Hello Student</h1>
+<img src="{{ favicon }}" alt="Site Logo">
+<h1>{{ brand_html }}</h1>
+<p>Welcome, {{ frappe.session.user }}</p>
+<p>Your full name: {{ user_fullname }}</p>
+<p>Your full email: {{ user_email }}</p>
+
+{% if custom_settings.show_banner %}
+    <div class="banner">Special Offer for You!</div>
+{% endif %}
+
+<h1>Hi, {{ get_fullname(frappe.session.user) }}</h1>
+<p>Your account balance is {{ 5000 | format_currency("INR") }}</p>
+<p>1 + 2 = {{ sum(1, 2) }}</p>
+<p>3 × 4 = {{ multiply(3, 4) }}</p>
+<p>{{ "hello world" | uppercase }}</p>
